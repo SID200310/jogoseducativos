@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e0f2ff; /* Azul claro para fundo */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #005f99; /* Azul mais forte */
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o cabeçalho */
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+main {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Sombra leve */
+}
+
+.game img {
+    width: 200px;
+    height: 150px;
+    margin-right: 1.5rem;
+    border-radius: 8px;
+}
+
+.game.reverse {
+    flex-direction: row-reverse;
+}
+
+.game.reverse img {
+    margin-right: 0;
+    margin-left: 1.5rem;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 1.6rem;
+    color: #005f99; /* Azul mais forte */
+    margin-bottom: 0.5rem;
+}
+
+.text p {
+    font-size: 1rem;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #005f99; /* Azul mais forte */
+    color: #fff;
+    font-size: 0.9rem;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1); /* Sombra para o rodapé */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    .game {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .game img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 1rem 0;
+    }
+
+    .game.reverse {
+        flex-direction: column;
+    }
+}
